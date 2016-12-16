@@ -23,9 +23,9 @@ class syntax_plugin_authorlist extends DokuWiki_Syntax_Plugin {
      */
     function getInfo(){
         return array(
-            'author' => 'Martin Schulte',
-            'email'  => '<lebowski[at]corvus[dot]uberspace[dot]de>',
-            'date'   => '2013-02-19',
+            'author' => 'Martin Schulte', 'Vladimir Kuzmin'
+            'email'  => '<jl.alice@yandex.ru>',
+            'date'   => '2016-12-16',
             'name'   => 'authorlist Plugin',
             'desc'   => 'Displays all contributors/authers of a wikipage',
             'url'    => 'http://dokuwiki.org/plugin:authorlist',
