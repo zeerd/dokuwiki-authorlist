@@ -72,7 +72,7 @@ class syntax_plugin_authorlist extends DokuWiki_Syntax_Plugin {
     * @param $handler Object reference to the Doku_Handler object.
     * @return Integer The current lexer state for the match.
     */
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
         $match = strtolower(substr($match,10,-2)); //strip ~~AUTHORS: from start and ~~ from end
         $options = explode('&',$match);
         $data = array();
