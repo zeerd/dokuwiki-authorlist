@@ -1,4 +1,5 @@
-dokuwiki-authors
+dokuwiki-authorlist
+
 ===================
 
-authors plugin for dokuwiki
+authorlist plugin for dokuwiki
