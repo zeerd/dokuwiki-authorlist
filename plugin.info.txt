@@ -4,4 +4,4 @@ email jl.alice@yandex.ru
 date 2016-08-16
 name authorlist Plugin
 desc Displays all contributors/authors of a wikipage
-url http://dokuwiki.org/plugin:authorlist
+url https://dokuwiki.org/plugin:authorlist
