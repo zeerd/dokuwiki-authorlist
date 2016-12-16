@@ -90,7 +90,7 @@ class syntax_plugin_authorlist extends DokuWiki_Syntax_Plugin {
    /**
     * Render the complete authorlist. 
     */
-    function render($mode, &$renderer, $data) {
+    function render($mode, Doku_Renderer $renderer, $data) {
 		// Only if XHTML
         if($mode == 'xhtml' && !$data['off']){
 			global $INFO;
