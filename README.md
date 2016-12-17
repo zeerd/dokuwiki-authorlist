@@ -1,4 +1,2 @@
-dokuwiki-authorlist
-===================
-
-authorlist plugin for dokuwiki
+# Аuthorlist Plugin for DokuWiki
+Displays all contributors/authors of a wikipage.
