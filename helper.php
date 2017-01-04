@@ -217,10 +217,14 @@ class helper_plugin_authorlist extends DokuWiki_Plugin
     * @param $loginname String Login name of an user.
     * @param $display String The Text should be displayed as link.
     */
-	private function linkToUserhomepage($loginname, $display){
+        private function linkToUserhomepage($loginname, $display){
 			$userpageid = str_replace("%USER%",$loginname, $this->userpageid);
 			$userpageid = htmlspecialchars($userpageid);
-			return "<a href=".wl($userpageid,'',true)." class='authoruserpage' title='".($this->tooltip == 'none'?$userpageid:'')."'>".$display."</a>";
+                        if(page_exists($userpageid)) {
+                            return '<a href="'.wl($userpageid).'" rel="author" class="wikilink1" title="'.($this->tooltip = 'none'?$userpageid:'').'">'.$display.'</a>';
+                        } else {
+                            return '<a href="'.wl($userpageid).'" rel="nofollow" class="wikilink2" title="'.($this->tooltip = 'none'?$userpageid:'').'">'.$display.'</a>';
+                        }   		
 	}
 	
 	/**
