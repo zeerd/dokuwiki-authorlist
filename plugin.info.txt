@@ -1,7 +1,7 @@
 base authorlist
 author Martin Schulte, Vladimir Kuzmin
 email jl.alice@yandex.ru
-date 2017-01-04
+date 2024-06-11
 name authorlist Plugin
 desc Displays all contributors/authors of a wikipage
 url https://dokuwiki.org/plugin:authorlist
