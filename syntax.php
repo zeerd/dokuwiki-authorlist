@@ -91,8 +91,12 @@ class syntax_plugin_authorlist extends DokuWiki_Syntax_Plugin {
     * Render the complete authorlist. 
     */
     function render($mode, Doku_Renderer $renderer, $data) {
-		// Only if XHTML
-        if($mode == 'xhtml' && !$data['off']){
+        // Only if XHTML
+        $func_on = true;
+        if(isset($data['off']) && $data['off']) {
+                $func_on = false;
+        }
+        if($mode == 'xhtml' && $func_on){
 			global $INFO;
 			$al = &plugin_load('helper', 'authorlist'); // A helper_plugin_authorlist object
 			if (!$al) return false; // Everything went well?
